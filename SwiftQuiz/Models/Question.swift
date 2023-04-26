@@ -130,7 +130,107 @@ func getQuestions() -> [Question] {
                 Answer(text: "Spacing", score: 0),
                 Answer(text: "Distribution", score: 0)
             ]
-        )
+        ),
+        Question(
+            topic: .collections,
+            title: "Сколько основных типов коллекций  существует в Swift?",
+            answers: [
+                Answer(text: "1", score: 0),
+                Answer(text: "2", score: 0),
+                Answer(text: "3", score: 1),
+                Answer(text: "4", score: 0)
+            ]
+        ),
+        Question(
+            topic: .collections,
+            title: "Какой метод удаляет и возвращает последний элемент массива?",
+            answers: [
+                Answer(text: "removeLast()", score: 1),
+                Answer(text: "dropLast()", score: 0),
+                Answer(text: "remove(_ :at:)", score: 0),
+                Answer(text: "deleteLast()", score: 0)
+            ]
+        ),
+        Question(
+            topic: .collections,
+            title: "Что используют для доступа к элементам коллекции?",
+            answers: [
+                Answer(text: "Значение элемента", score: 0),
+                Answer(text: "Ключевое слово", score: 0),
+                Answer(text: "Индекс", score: 1),
+                Answer(text: "Делегат", score: 0)
+            ]
+        ),
+        Question(
+            topic: .collections,
+            title: "... - неупорядоченная коллекция, хранящая пары ключ-значение.",
+            answers: [
+                Answer(text: "Массив", score: 0),
+                Answer(text: "Словарь", score: 1),
+                Answer(text: "Множество", score: 0),
+                Answer(text: "Структура", score: 0)
+            ]
+        ),
+        Question(
+            topic: .collections,
+            title: "Можно ли изменить множество, если при инициализации мы присвоили его константе?",
+            answers: [
+                Answer(text: "Можно добавить элементы", score: 0),
+                Answer(text: "можно только удалять элементы", score: 0),
+                Answer(text: "Нельзя", score: 1),
+                Answer(text: "Нет правильного ответа", score: 0)
+            ]
+        ),
+        Question(
+            topic: .collections,
+            title: "... - неупорядоченная коллекция, хранящая пары ключ-значение.",
+            answers: [
+                Answer(text: "Массив", score: 0),
+                Answer(text: "Словарь", score: 1),
+                Answer(text: "Множество", score: 0),
+                Answer(text: "Структура", score: 0)
+            ]
+        ),
+        Question(
+            topic: .dataTransfer,
+            title: "При использовании segue Present Modally, какой необходимо выбрать параметр Presentation, чтобы отображение было на весь экран?",
+            answers: [
+                Answer(text: "Page Sheet", score: 0),
+                Answer(text: "Full Screen", score: 1),
+                Answer(text: "Current Context", score: 0),
+                Answer(text: "Same As Destination", score: 0)
+            ]
+        ),
+        Question(
+            topic: .dataTransfer,
+            title: "Что необходимо использовать, чтобы убрать отображение кнопки Back в navigation item, при использование segue Show?",
+            answers: [
+                Answer(text: "hidesBackButton", score: 1),
+                Answer(text: "struct", score: 0),
+                Answer(text: "removeButton()", score: 0),
+                Answer(text: "нельзя убрать кнопку", score: 0)
+            ]
+        ),
+        Question(
+            topic: .dataTransfer,
+            title: "При использовании prepare(for segue:), что означает destination?",
+            answers: [
+                Answer(text: "Нет правильного ответа", score: 0),
+                Answer(text: "Место назначения", score: 1),
+                Answer(text: "Точка возврата", score: 0),
+                Answer(text: "Рекурсия", score: 0)
+            ]
+        ),
+        Question(
+            topic: .dataTransfer,
+            title: "Какой segue используется для передачи информации на предыдущий экран?",
+            answers: [
+                Answer(text: "prepare", score: 0),
+                Answer(text: "show", score: 0),
+                Answer(text: "unwind", score: 1),
+                Answer(text: "push", score: 0)
+            ]
+        ),
     ]
 }
 
