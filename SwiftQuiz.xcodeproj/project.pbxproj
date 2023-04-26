@@ -56,15 +56,23 @@
 		4B29786929F98B88004A0B16 /* SwiftQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				4B29787E29F98BB5004A0B16 /* Storyboards */,
 				4B29786A29F98B88004A0B16 /* AppDelegate.swift */,
 				4B29786C29F98B88004A0B16 /* SceneDelegate.swift */,
 				4B29786E29F98B88004A0B16 /* ViewController.swift */,
-				4B29787029F98B88004A0B16 /* Main.storyboard */,
 				4B29787329F98B89004A0B16 /* Assets.xcassets */,
-				4B29787529F98B89004A0B16 /* LaunchScreen.storyboard */,
 				4B29787829F98B89004A0B16 /* Info.plist */,
 			);
 			path = SwiftQuiz;
+			sourceTree = "<group>";
+		};
+		4B29787E29F98BB5004A0B16 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4B29787529F98B89004A0B16 /* LaunchScreen.storyboard */,
+				4B29787029F98B88004A0B16 /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,11 +298,12 @@
 				DEVELOPMENT_TEAM = 73AU25U66T;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftQuiz/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Swift Quiz";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +311,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Sergey-Zakharov.SwiftQuiz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -318,11 +330,12 @@
 				DEVELOPMENT_TEAM = 73AU25U66T;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftQuiz/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Swift Quiz";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +343,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Sergey-Zakharov.SwiftQuiz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
