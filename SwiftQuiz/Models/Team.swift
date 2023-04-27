@@ -6,6 +6,41 @@
 //
 
 struct Team {
-    let fullName: String
+    let name: String
+    let surname: String
     let image: String
+    
+    var fullName: String {
+        "\(name) \(surname)"
+    }
+
+    static func getTeam() -> [Team] {
+        [
+            Team(
+                name: "Сергей",
+                surname: "Сергей",
+                image: "Sergei"
+            ),
+            Team(
+                name: "Дмитрий",
+                surname: "Келлер",
+                image: "DmitryK"
+            ),
+            Team(
+                name: "Виталий",
+                surname: "Сабин",
+                image: "Vitaly"
+            ),
+            Team(
+                name: "Станислав",
+                surname: "Станислав",
+                image: "Stanislav"
+            ),
+            Team(
+                name: "Дмитрий",
+                surname: "Федоров",
+                image: "DmitryF"
+            ),
+        ]
+    }
 }
