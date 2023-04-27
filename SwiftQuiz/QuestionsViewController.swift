@@ -19,61 +19,11 @@ final class QuestionsViewController: UIViewController {
     private var totalScore = 0
     private var currentIndex = 0
     
-    let questions: [Question] = [
-        Question(
-            topic: .dataTransfer,
-            title: "Какой метод используется, чтобы закрыть экран без передачи данных?",
-            answers: [
-                Answer(text: "viewDidLoad", score: 0),
-                Answer(text: "dismiss", score: 1),
-                Answer(text: "prepare(for segue)", score: 0),
-                Answer(text: "yankeeGoHome", score: 0)
-            ]
-        ),
-        Question(
-            topic: .dataTransfer,
-            title: "Какой паттерн используется для передачи данных от одного объекта к другому?",
-            answers: [
-                Answer(text: "Делегирования", score: 1),
-                Answer(text: "Программирования", score: 0),
-                Answer(text: "Проектирования", score: 0),
-                Answer(text: "Наследования", score: 0)
-            ]
-        ),
-        Question(
-            topic: .dataTransfer,
-            title: "Что представляет собой делегат?",
-            answers: [
-                Answer(text: "class", score: 0),
-                Answer(text: "struct", score: 0),
-                Answer(text: "enum", score: 0),
-                Answer(text: "protocol", score: 1)
-            ]
-        ),
-        Question(
-            topic: .dataTransfer,
-            title: "Каким ключевым словом мы обязательно помечаем экземпляр делегата?",
-            answers: [
-                Answer(text: "weak", score: 0),
-                Answer(text: "strong", score: 0),
-                Answer(text: "unowned", score: 1),
-                Answer(text: "amazing", score: 0)
-            ]
-        ),
-        Question(
-            topic: .dataTransfer,
-            title: "Обязательны ли протоколы-делегаты для передачи данных?",
-            answers: [
-                Answer(text: "Да", score: 0),
-                Answer(text: "Нет", score: 1),
-                Answer(text: "Только при переходе от ячейки", score: 0),
-                Answer(text: "Только в полнолуние", score: 0)
-            ]
-        )
-    ]
+    var questions: [Question]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.hidesBackButton = true
         updateUI(for: currentIndex)
     }
     
