@@ -163,16 +163,6 @@ struct Question {
                 ]
             ),
             Question(
-                topic: .collections,
-                title: "... - неупорядоченная коллекция, хранящая пары ключ-значение.",
-                answers: [
-                    Answer(text: "Массив", score: 0),
-                    Answer(text: "Словарь", score: 1),
-                    Answer(text: "Множество", score: 0),
-                    Answer(text: "Структура", score: 0)
-                ]
-            ),
-            Question(
                 topic: .dataTransfer,
                 title: "При использовании segue Present Modally, какой необходимо выбрать параметр Presentation, чтобы отображение было на весь экран?",
                 answers: [
@@ -212,7 +202,16 @@ struct Question {
                     Answer(text: "push", score: 0)
                 ]
             ),
-            
+            Question(
+                topic: .dataTransfer,
+                title: "Можно ли передавать данные через protocol?",
+                answers: [
+                    Answer(text: "да", score: 1),
+                    Answer(text: "нет", score: 0),
+                    Answer(text: "по-другому нельзя", score: 0),
+                    Answer(text: "можно, но это плохая практика", score: 0)
+                ]
+            ),
             // келлер
             Question(
                 topic: .classes,
