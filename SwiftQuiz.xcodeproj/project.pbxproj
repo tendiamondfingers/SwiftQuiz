@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		480F033F29FAB3AC008BFD2B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480F033E29FAB3AC008BFD2B /* TabBarController.swift */; };
+		480F034129FABDBB008BFD2B /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480F034029FABDBB008BFD2B /* TeamViewController.swift */; };
+		480F034329FABE25008BFD2B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480F034229FABE25008BFD2B /* MainViewController.swift */; };
+		4B1B051529FAEB9800240C78 /* TopicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B051429FAEB9800240C78 /* TopicTableViewController.swift */; };
 		4B29786B29F98B88004A0B16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B29786A29F98B88004A0B16 /* AppDelegate.swift */; };
 		4B29786D29F98B88004A0B16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B29786C29F98B88004A0B16 /* SceneDelegate.swift */; };
 		4B29786F29F98B88004A0B16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B29786E29F98B88004A0B16 /* ViewController.swift */; };
 		4B29787229F98B88004A0B16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B29787029F98B88004A0B16 /* Main.storyboard */; };
 		4B29787429F98B89004A0B16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B29787329F98B89004A0B16 /* Assets.xcassets */; };
 		4B29787729F98B89004A0B16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B29787529F98B89004A0B16 /* LaunchScreen.storyboard */; };
+		4B29788329F991BB004A0B16 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B29788229F991BB004A0B16 /* Question.swift */; };
+		4B29788529F99C78004A0B16 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B29788429F99C78004A0B16 /* Team.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		480F033E29FAB3AC008BFD2B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		480F034029FABDBB008BFD2B /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
+		480F034229FABE25008BFD2B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4B1B051429FAEB9800240C78 /* TopicTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicTableViewController.swift; sourceTree = "<group>"; };
 		4B29786729F98B88004A0B16 /* SwiftQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B29786A29F98B88004A0B16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B29786C29F98B88004A0B16 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +34,8 @@
 		4B29787329F98B89004A0B16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B29787629F98B89004A0B16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B29787829F98B89004A0B16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B29788229F991BB004A0B16 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		4B29788429F99C78004A0B16 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +68,17 @@
 		4B29786929F98B88004A0B16 /* SwiftQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				4B29787E29F98BB5004A0B16 /* Storyboards */,
+				4B29787F29F98FAD004A0B16 /* Models */,
 				4B29786A29F98B88004A0B16 /* AppDelegate.swift */,
 				4B29786C29F98B88004A0B16 /* SceneDelegate.swift */,
 				4B29786E29F98B88004A0B16 /* ViewController.swift */,
+				480F033E29FAB3AC008BFD2B /* TabBarController.swift */,
+				480F034229FABE25008BFD2B /* MainViewController.swift */,
+				480F034029FABDBB008BFD2B /* TeamViewController.swift */,
+				4B1B051429FAEB9800240C78 /* TopicTableViewController.swift */,
 				4B29787329F98B89004A0B16 /* Assets.xcassets */,
 				4B29787829F98B89004A0B16 /* Info.plist */,
+				4B29787E29F98BB5004A0B16 /* Storyboards */,
 			);
 			path = SwiftQuiz;
 			sourceTree = "<group>";
@@ -69,10 +86,19 @@
 		4B29787E29F98BB5004A0B16 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				4B29787529F98B89004A0B16 /* LaunchScreen.storyboard */,
 				4B29787029F98B88004A0B16 /* Main.storyboard */,
+				4B29787529F98B89004A0B16 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		4B29787F29F98FAD004A0B16 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4B29788229F991BB004A0B16 /* Question.swift */,
+				4B29788429F99C78004A0B16 /* Team.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +173,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B29786F29F98B88004A0B16 /* ViewController.swift in Sources */,
+				4B1B051529FAEB9800240C78 /* TopicTableViewController.swift in Sources */,
+				4B29788329F991BB004A0B16 /* Question.swift in Sources */,
+				480F033F29FAB3AC008BFD2B /* TabBarController.swift in Sources */,
 				4B29786B29F98B88004A0B16 /* AppDelegate.swift in Sources */,
+				4B29788529F99C78004A0B16 /* Team.swift in Sources */,
 				4B29786D29F98B88004A0B16 /* SceneDelegate.swift in Sources */,
+				480F034129FABDBB008BFD2B /* TeamViewController.swift in Sources */,
+				480F034329FABE25008BFD2B /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
