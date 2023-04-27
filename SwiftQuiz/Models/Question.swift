@@ -212,6 +212,109 @@ struct Question {
                     Answer(text: "push", score: 0)
                 ]
             ),
+            
+            // келлер
+            Question(
+                topic: .classes,
+                title: "Что из перечисленного является ссылочным типом?",
+                answers: [
+                    Answer(text: "Свойства", score: 0),
+                    Answer(text: "Структуры", score: 0),
+                    Answer(text: "Классы", score: 1),
+                    Answer(text: "Перечисления", score: 0)
+                ]
+            ),
+            Question(
+                topic: .classes,
+                title: "Как объявляется класс?",
+                answers: [
+                    Answer(text: "С помощью ключевого слова enum", score: 0),
+                    Answer(text: "С помощью ключевого слова struct", score: 0),
+                    Answer(text: "C помощью ключевого слова class", score: 1),
+                    Answer(text: "С помощью ключевого слова array", score: 0)
+                ]
+            ),
+            Question(
+                topic: .classes,
+                title: "Что можно объявить внутри классов для добавления функциональности?",
+                answers: [
+                    Answer(text: "Константы и переменные", score: 0),
+                    Answer(text: "Свойства и методы", score: 1),
+                    Answer(text: "Комментарии", score: 0),
+                    Answer(text: "Функции и замыкания", score: 0)
+                ]
+            ),
+            Question(
+                topic: .classes,
+                title: "Чтобы создать экземпляр класса, какой синтаксис необходимо использовать?",
+                answers: [
+                    Answer(text: "(Name)()", score: 0),
+                    Answer(text: "Name = ()", score: 0),
+                    Answer(text: "Name()", score: 1),
+                    Answer(text: "name = []", score: 0)
+                ]
+            ),
+            Question(
+                topic: .classes,
+                title: "Как традиционно называют экземпляр класса в ООП?",
+                answers: [
+                    Answer(text: "Таргет", score: 0),
+                    Answer(text: "Экземпляр", score: 0),
+                    Answer(text: "Объект", score: 1),
+                    Answer(text: "Структура", score: 0)
+                ]
+            ),
+            Question(
+                topic: .lifeCircle,
+                title: "1. В каком из этих методов мы не обращаемся с суперклассу?",
+                answers: [
+                    Answer(text: "viewDidLoad", score: 0),
+                    Answer(text: "viewDidAppear", score: 0),
+                    Answer(text: "viewWillLayoutSubviews", score: 1),
+                    Answer(text: "updateWillConstraints", score: 0)
+                ]
+            ),
+            Question(
+                topic: .lifeCircle,
+                title: "2. Какой из этих методов жизненного цикла отработает первым?",
+                answers: [
+                    Answer(text: "viewWillLayoutSubviews", score: 0),
+                    Answer(text: "viewDidAppear", score: 0),
+                    Answer(text: "viewDidLoad", score: 1),
+                    Answer(text: "updateWillConstraints", score: 0)
+                ]
+            ),
+            Question(
+                topic: .lifeCircle,
+                title: "В каком методе мы можем инициализировать объекты  и переменные, которые должны жить весь жизненный цикл?",
+                answers: [
+                    Answer(text: "deinit()", score: 0),
+                    Answer(text: "awakeFromNib()", score: 0),
+                    Answer(text: "viewDidLoad()", score: 1),
+                    Answer(text: "viewWillTransition()", score: 0)
+                ]
+            ),
+            Question(
+                topic: .lifeCircle,
+                title: "Этот метод отработает последним при закрытии экрана...",
+                answers: [
+                    Answer(text: "viewWillTransition()", score: 0),
+                    Answer(text: "viewDidAppear()", score: 0),
+                    Answer(text: "deinit()", score: 1),
+                    Answer(text: "viewDidLoad()", score: 0)
+                ]
+            ),
+            Question(
+                topic: .lifeCircle,
+                title: "После какого метода у нас начнут устанавливаться свойства и атлеты нашего контроллера?",
+                answers: [
+                    Answer(text: "После loadView()", score: 0),
+                    Answer(text: "После deinit()", score: 0),
+                    Answer(text: "После awakeFromNib()", score: 1),
+                    Answer(text: "После viewDidLoad()", score: 0)
+                ]
+            ),
+            
         ]
     }
 }
