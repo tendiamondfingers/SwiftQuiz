@@ -15,6 +15,7 @@
 		4B29787729F98B89004A0B16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B29787529F98B89004A0B16 /* LaunchScreen.storyboard */; };
 		4B29788329F991BB004A0B16 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B29788229F991BB004A0B16 /* Question.swift */; };
 		4B29788529F99C78004A0B16 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B29788429F99C78004A0B16 /* Team.swift */; };
+		6896AB6D29FAD6E6004CA495 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6896AB6C29FAD6E6004CA495 /* QuestionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		4B29787829F98B89004A0B16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B29788229F991BB004A0B16 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		4B29788429F99C78004A0B16 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		6896AB6C29FAD6E6004CA495 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				4B29786A29F98B88004A0B16 /* AppDelegate.swift */,
 				4B29786C29F98B88004A0B16 /* SceneDelegate.swift */,
 				4B29786E29F98B88004A0B16 /* ViewController.swift */,
+				6896AB6C29FAD6E6004CA495 /* QuestionsViewController.swift */,
 				4B29787329F98B89004A0B16 /* Assets.xcassets */,
 				4B29787829F98B89004A0B16 /* Info.plist */,
 				4B29787E29F98BB5004A0B16 /* Storyboards */,
@@ -162,6 +165,7 @@
 			files = (
 				4B29786F29F98B88004A0B16 /* ViewController.swift in Sources */,
 				4B29788329F991BB004A0B16 /* Question.swift in Sources */,
+				6896AB6D29FAD6E6004CA495 /* QuestionsViewController.swift in Sources */,
 				4B29786B29F98B88004A0B16 /* AppDelegate.swift in Sources */,
 				4B29788529F99C78004A0B16 /* Team.swift in Sources */,
 				4B29786D29F98B88004A0B16 /* SceneDelegate.swift in Sources */,
