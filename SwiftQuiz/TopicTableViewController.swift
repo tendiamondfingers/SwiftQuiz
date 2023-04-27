@@ -5,9 +5,12 @@
 //  Created by Сергей Захаров on 27.04.2023.
 //
 
+// Переход должен быть от самого вью контроллера на QuestionViewController
+// Установить идентификатор для перехода на QuestionVC в сториборде
+
 import UIKit
 
-class TopicTableViewController: UITableViewController {
+final class TopicTableViewController: UITableViewController {
     
     private var topics: [Topic] = [
         .basics,
@@ -579,6 +582,9 @@ class TopicTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let indexPath = tableView.indexPathForSelectedRow,
            let destinationVC = segue.destination as? QuestionViewController {
+            let selectedTopic = topics[indexPath.row]
+            let selectedQuestions = questions[selectedTopic] ?? []
+            destinationVC.questions = selectedQuestions
         }
     }
 }
