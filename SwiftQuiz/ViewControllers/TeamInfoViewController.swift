@@ -8,42 +8,45 @@
 import UIKit
 
 class TeamInfoViewController: UIViewController, UIScrollViewDelegate {
-
     
     @IBOutlet weak var scrollView: UIScrollView!
+    
+    @IBOutlet weak var pageControl: UIPageControl!
+    
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
+    var images: [String] = ["image1","image2","image3"]
+    var frame = CGRect(x: 10, y: 0, width: 0, height: 0)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       // createScrollView()
-      
-
+        scrollView.showsHorizontalScrollIndicator = true
+        scrollView.isPagingEnabled = true
+        
+        for index in 0..<images.count {
+            frame.origin.x = scrollView.frame.size.width * CGFloat(index)
+            frame.size = scrollView.frame.size
+            
+            let imageView = UIImageView(frame: frame)
+            imageView.image = UIImage(named: images[index])
+            imageView.contentMode = .center
+            self.scrollView.addSubview(imageView)
+        }
+        scrollView.contentSize = CGSize(width: scrollView.frame.size.width * CGFloat(images.count), height: scrollView.frame.size.height)
+        scrollView.delegate = self
+        
+        segmentedControl.removeAllSegments()
+        for index in 0..<images.count {
+            segmentedControl.insertSegment(with: UIImage(named: images[index]), at: index, animated: false)
+        }
+        segmentedControl.selectedSegmentIndex = 0
     }
     
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let p = "Начинается прокрутка"
-        self.scrollView.alpha = 0.50
-    }
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        let p = "вызывается после прокрутки"
-        self.scrollView.alpha = 1.0
+        let page = scrollView.contentOffset.x/scrollView.frame.size.width
+        segmentedControl.selectedSegmentIndex = Int(page)
     }
-    
-    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        let p = "гарантирует что вернет альфу к 1"
-        self.scrollView.alpha = 1.0
-    }
-    
-//    func createScrollView() {
-//        let avatarOne = UIImage(named: "2")
-//        let avatarTwo = UIImage(named: "23")
-//        scrollView = UIImageView(image: avatarOne)
-//        scrollView = UIImageView(image: avatarTwo)
-//        scrollView = UIScrollView(frame: self.view.bounds)
-//       scrollView.addSubview(myImageView)
-//       scrollView.contentSize = self.myImageView.bounds.size
-//       scrollView.delegate = self
-//        self.view.addSubview(myScrollView)
-//    }
 }
+
+
