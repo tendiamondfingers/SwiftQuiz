@@ -13,6 +13,106 @@ struct Question {
     static func getQuestions() -> [Question] {
         [
             Question(
+                topic: .basics,
+                title: "Какое ключевое слово используется для объявления переменной в Swift?",
+                answers: [
+                    Answer(text: "let", score: 0),
+                    Answer(text: "var", score: 1),
+                    Answer(text: "const", score: 0),
+                    Answer(text: "def", score: 0)
+                ]
+            ),
+            Question(
+                topic: .basics,
+                title: "Какие операторы используются для сравнения значений в Swift?",
+                answers: [
+                    Answer(text: "==, !=, <, >, <=, >=", score: 1),
+                    Answer(text: "=, <>, <, >, <=, >=", score: 0),
+                    Answer(text: ":=, !=, <, >, <=, >=", score: 0),
+                    Answer(text: "==, <>, <, >, <=, =>", score: 0)
+                ]
+            ),
+            Question(
+                topic: .basics,
+                title: "Какой оператор используется для объединения двух строк в Swift?",
+                answers: [
+                    Answer(text: "+", score: 1),
+                    Answer(text: "&", score: 0),
+                    Answer(text: ",", score: 0),
+                    Answer(text: "|", score: 0)
+                ]
+            ),
+            Question(
+                topic: .basics,
+                title: "Какие типы циклов поддерживает Swift?",
+                answers: [
+                    Answer(text: "None of the above", score: 0),
+                    Answer(text: "for-each, while-loop, repeat-until", score: 0),
+                    Answer(text: "for-next, do-while, while-do", score: 0),
+                    Answer(text: "for-in, while, repeat-while", score: 1)
+                ]
+            ),
+            Question(
+                topic: .basics,
+                title: "Какие типы условных операторов поддерживает Swift?",
+                answers: [
+                    Answer(text: "if-elseif-else, select-case", score: 0),
+                    Answer(text: "if-else, switch", score: 1),
+                    Answer(text: "if-then, switch-case", score: 0),
+                    Answer(text: "None of the above", score: 0)
+                ]
+            ),
+            Question(
+                topic: .mvc,
+                title: "Что такое MVC в Swift?",
+                answers: [
+                    Answer(text: "Модель-Вид-Контроллер", score: 1),
+                    Answer(text: "Метод-Вид-Код", score: 0),
+                    Answer(text: "Модуль-Вид-Конструктор", score: 0),
+                    Answer(text: "Модель-Вид-Код", score: 0)
+                ]
+            ),
+            Question(
+                topic: .mvc,
+                title: "Что такое Модель в MVC в Swift?",
+                answers: [
+                    Answer(text: "Компонент, который отображает данные пользователю", score: 0),
+                    Answer(text: "Компонент, который управляет бизнес-логикой и хранит данные", score: 1),
+                    Answer(text: "Компонент, который обрабатывает ввод пользователя", score: 0),
+                    Answer(text: "Компонент, который управляет навигацией приложения", score: 0)
+                ]
+            ),
+            Question(
+                topic: .mvc,
+                title: "Какие задачи выполняет Модель в MVC в Swift?",
+                answers: [
+                    Answer(text: "Отображение данных пользователю", score: 0),
+                    Answer(text: "Управление бизнес-логикой и хранение данных", score: 1),
+                    Answer(text: "Обработка ввода пользователя", score: 0),
+                    Answer(text: "Управление навигацией приложения", score: 0)
+                ]
+            ),
+            Question(
+                topic: .mvc,
+                title: "Какие задачи выполняет Контроллер в MVC в Swift?",
+                answers: [
+                    Answer(text: "Управление бизнес-логикой и хранение данных", score: 0),
+                    Answer(text: "Отображение данных пользователю", score: 0),
+                    Answer(text: "Обработка ввода пользователя", score: 1),
+                    Answer(text: "Управление навигацией приложения", score: 0)
+                ]
+            ),
+            Question(
+                topic: .mvc,
+                title: "Какой компонент MVC в Swift можно использовать для обновления пользовательского интерфейса?",
+                answers: [
+                    Answer(text: "Модель", score: 0),
+                    Answer(text: "Представление", score: 1),
+                    Answer(text: "Контроллер", score: 0),
+                    Answer(text: "Ни один из перечисленных", score: 0)
+                ]
+            ),
+            Question(
                 topic: .structs,
                 title: "Каким ключевым словом обозначается структура в коде?",
                 answers: [
