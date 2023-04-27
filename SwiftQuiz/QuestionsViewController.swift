@@ -13,6 +13,7 @@ import UIKit
 
 final class QuestionsViewController: UIViewController {
 
+    @IBOutlet var numberLabel: UILabel!
     @IBOutlet var questionLabel: UILabel!
     @IBOutlet var answerButtons: [UIButton]!
     
@@ -47,6 +48,7 @@ final class QuestionsViewController: UIViewController {
         for (button, answer) in zip(answerButtons, answers) {
             button.setTitle(answer.text, for: .normal)
         }
+        numberLabel.text = "Вопрос \(currentIndex + 1) из \(questions.count)"
     }
     
     private func nextQuestion() {
