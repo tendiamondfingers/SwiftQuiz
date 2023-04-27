@@ -9,7 +9,7 @@ struct Team {
     let name: String
     let surname: String
     let image: String
-    
+
     var fullName: String {
         "\(name) \(surname)"
     }
@@ -18,7 +18,7 @@ struct Team {
         [
             Team(
                 name: "Сергей",
-                surname: "Сергей",
+                surname: "Захаров",
                 image: "Sergei"
             ),
             Team(
@@ -32,15 +32,15 @@ struct Team {
                 image: "Vitaly"
             ),
             Team(
-                name: "Станислав",
-                surname: "Станислав",
-                image: "Stanislav"
+                name: "Святослав",
+                surname: "Святослав",
+                image: "Svyatoslav"
             ),
             Team(
                 name: "Дмитрий",
                 surname: "Федоров",
                 image: "DmitryF"
-            ),
+            )
         ]
     }
 }
