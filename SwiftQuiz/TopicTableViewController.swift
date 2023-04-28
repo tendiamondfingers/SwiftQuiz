@@ -579,14 +579,14 @@ final class TopicTableViewController: UITableViewController {
     
     // MARK: - Navigation
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let indexPath = tableView.indexPathForSelectedRow,
-           let destinationVC = segue.destination as? QuestionViewController {
-            let selectedTopic = topics[indexPath.row]
-            let selectedQuestions = questions[selectedTopic] ?? []
-            destinationVC.questions = selectedQuestions
-        }
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if let indexPath = tableView.indexPathForSelectedRow,
+//           let destinationVC = segue.destination as? QuestionViewController {
+//            let selectedTopic = topics[indexPath.row]
+//            let selectedQuestions = questions[selectedTopic] ?? []
+//            destinationVC.questions = selectedQuestions
+//        }
+//    }
 }
 
 
