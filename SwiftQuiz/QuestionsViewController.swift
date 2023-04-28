@@ -28,10 +28,10 @@ final class QuestionsViewController: UIViewController {
         updateUI(for: currentIndex)
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        guard let resultVC = segue.destination as? ResultViewController else { return }
-//        resultVC.result = totalScore
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let resultVC = segue.destination as? ResultViewController else { return }
+        resultVC.result = totalScore
+    }
     
     @IBAction func answerButtonPressed(_ sender: UIButton) {
         guard let buttonIndex = answerButtons.firstIndex(of: sender) else { return }
