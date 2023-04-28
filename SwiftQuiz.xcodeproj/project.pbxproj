@@ -20,6 +20,7 @@
 		4B29788329F991BB004A0B16 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B29788229F991BB004A0B16 /* Question.swift */; };
 		4B29788529F99C78004A0B16 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B29788429F99C78004A0B16 /* Team.swift */; };
 		6896AB6D29FAD6E6004CA495 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6896AB6C29FAD6E6004CA495 /* QuestionsViewController.swift */; };
+		79BEF45929FAF632008844E9 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BEF45829FAF632008844E9 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		4B29788229F991BB004A0B16 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		4B29788429F99C78004A0B16 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		6896AB6C29FAD6E6004CA495 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
+		79BEF45829FAF632008844E9 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				480F034029FABDBB008BFD2B /* TeamViewController.swift */,
 				4B1B051429FAEB9800240C78 /* TopicTableViewController.swift */,
 				6896AB6C29FAD6E6004CA495 /* QuestionsViewController.swift */,
+				79BEF45829FAF632008844E9 /* ResultViewController.swift */,
 				4B29787329F98B89004A0B16 /* Assets.xcassets */,
 				4B29787829F98B89004A0B16 /* Info.plist */,
 				4B29787E29F98BB5004A0B16 /* Storyboards */,
@@ -185,6 +188,7 @@
 				4B29786D29F98B88004A0B16 /* SceneDelegate.swift in Sources */,
 				480F034129FABDBB008BFD2B /* TeamViewController.swift in Sources */,
 				480F034329FABE25008BFD2B /* MainViewController.swift in Sources */,
+				79BEF45929FAF632008844E9 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
