@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TeamViewController: UITabBarController {
+final class TeamViewController: UITabBarController {
     
     var team: [Team]!
 
