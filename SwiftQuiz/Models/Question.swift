@@ -303,7 +303,7 @@ struct Question {
                 ]
             ),
             Question(
-                topic: .dataTransfer,
+                topic: .screenTransition,
                 title: "Можно ли передавать данные через protocol?",
                 answers: [
                     Answer(text: "да", score: 1),
@@ -312,7 +312,6 @@ struct Question {
                     Answer(text: "можно, но это плохая практика", score: 0)
                 ]
             ),
-            // келлер
             Question(
                 topic: .classes,
                 title: "Что из перечисленного является ссылочным типом?",
