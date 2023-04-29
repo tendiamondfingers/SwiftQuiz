@@ -25,6 +25,7 @@ final class TeamViewController: UIViewController {
             
         photoImageView.layer.cornerRadius = 10
         nameLabel?.text = team[currentIndex].fullName
+        
         teamLabel.text = """
  Тимлид:
 \(team[0].fullName)

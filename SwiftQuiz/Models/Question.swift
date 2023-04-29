@@ -532,6 +532,7 @@ struct Question {
         return questionsByTopic
     }
 }
+
 struct Answer {
     let text: String
     let score: Int
@@ -551,7 +552,7 @@ enum Topic {
 }
 
 
-            
-            
+
+
 
 

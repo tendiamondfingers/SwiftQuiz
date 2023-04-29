@@ -20,10 +20,10 @@ final class QuizViewController: UIViewController {
         guard let navigationVC = segue.destination as? UINavigationController else {
             return
         }
-        guard let topicVC = navigationVC.topViewController as? TopicTableViewController else {
+        //guard let topicVC = navigationVC.topViewController as? TopicTableViewController else {
             return
         }
         //topicVC.questions = questions
-    }
+//    }
 }
 
