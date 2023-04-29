@@ -32,9 +32,9 @@ struct Team {
                 image: "Vitaly"
             ),
             Team(
-                name: "Святослав",
-                surname: "Святослав",
-                image: "Svyatoslav"
+                name: "Станислав",
+                surname: "Сазонов",
+                image: "Stanislav"
             ),
             Team(
                 name: "Дмитрий",
