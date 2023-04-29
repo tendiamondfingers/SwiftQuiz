@@ -26,6 +26,7 @@ final class QuestionsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
+        roundCorners()
         updateUI(for: currentIndex)
     }
     
@@ -60,6 +61,12 @@ final class QuestionsViewController: UIViewController {
         }
         
         performSegue(withIdentifier: "showResult", sender: nil)
+    }
+    
+    private func roundCorners() {
+        for button in answerButtons {
+            button.layer.cornerRadius = 15
+        }
     }
 
 }

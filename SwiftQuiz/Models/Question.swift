@@ -303,7 +303,7 @@ struct Question {
                 ]
             ),
             Question(
-                topic: .dataTransfer,
+                topic: .screenTransition,
                 title: "Можно ли передавать данные через protocol?",
                 answers: [
                     Answer(text: "да", score: 1),
