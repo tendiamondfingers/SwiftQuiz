@@ -8,13 +8,14 @@
 import UIKit
 
 final class ResultViewController: UIViewController {
-    
     @IBOutlet var userScoreLabel: UILabel!
+    @IBOutlet var doneButton: UIButton!
     
     var result = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        doneButton.layer.cornerRadius = 15
         userScoreLabel.text = "Результат\(result) из 5"
     }
     
