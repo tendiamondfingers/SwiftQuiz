@@ -63,6 +63,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Игра" image="gamecontroller" catalog="system" id="ycu-3T-ryV"/>
+                    <connections>
+                        <outlet property="playButton" destination="5cT-mr-F6s" id="4u3-xd-CGn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Ph-rf-N0s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -154,7 +157,7 @@
             </objects>
             <point key="canvasLocation" x="5133.75" y="767.95774647887322"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Темы-->
         <scene sceneID="172-Ku-Tgk">
             <objects>
                 <tableViewController id="L3a-WA-y9F" customClass="TopicTableViewController" customModule="SwiftQuiz" customModuleProvider="target" sceneMemberID="viewController">
@@ -180,7 +183,7 @@
                             <outlet property="delegate" destination="L3a-WA-y9F" id="pIM-o0-RCH"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="Mw2-hA-2ZK"/>
+                    <navigationItem key="navigationItem" title="Темы" id="Mw2-hA-2ZK"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xPI-Sc-icz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -372,7 +375,10 @@
                                         <color key="backgroundColor" red="0.92549026010000002" green="0.38823530080000002" blue="0.21568629149999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Done"/>
+                                        <connections>
+                                            <action selector="doneButtonPressed" destination="uHh-ie-Y3k" eventType="touchUpInside" id="Jrv-F2-5hf"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -389,6 +395,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="ZFA-rv-JMk"/>
                     <connections>
+                        <outlet property="doneButton" destination="CVk-Rk-fcu" id="LX7-Nc-gHw"/>
                         <outlet property="userScoreLabel" destination="PiH-zb-gx9" id="MRN-cF-wTJ"/>
                     </connections>
                 </viewController>
