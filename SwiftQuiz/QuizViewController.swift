@@ -9,11 +9,11 @@ import UIKit
 
 class QuizViewController: UIViewController {
 
-    
+    var team: [Team]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
 

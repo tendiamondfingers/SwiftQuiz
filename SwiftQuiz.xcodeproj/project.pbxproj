@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		480F033F29FAB3AC008BFD2B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480F033E29FAB3AC008BFD2B /* TabBarController.swift */; };
 		480F034129FABDBB008BFD2B /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480F034029FABDBB008BFD2B /* TeamViewController.swift */; };
-		480F034329FABE25008BFD2B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480F034229FABE25008BFD2B /* MainViewController.swift */; };
+		48C4821C29FD0753004C917B /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C4821B29FD0753004C917B /* MainTabBarController.swift */; };
 		4B1B051529FAEB9800240C78 /* TopicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B051429FAEB9800240C78 /* TopicTableViewController.swift */; };
 		4B29786B29F98B88004A0B16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B29786A29F98B88004A0B16 /* AppDelegate.swift */; };
 		4B29786D29F98B88004A0B16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B29786C29F98B88004A0B16 /* SceneDelegate.swift */; };
@@ -21,13 +20,11 @@
 		4B29788529F99C78004A0B16 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B29788429F99C78004A0B16 /* Team.swift */; };
 		6896AB6D29FAD6E6004CA495 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6896AB6C29FAD6E6004CA495 /* QuestionsViewController.swift */; };
 		79BEF45929FAF632008844E9 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BEF45829FAF632008844E9 /* ResultViewController.swift */; };
-		E147850F29F9AC88003D51B6 /* TeamInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E147850E29F9AC88003D51B6 /* TeamInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		480F033E29FAB3AC008BFD2B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		480F034029FABDBB008BFD2B /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
-		480F034229FABE25008BFD2B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		48C4821B29FD0753004C917B /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		4B1B051429FAEB9800240C78 /* TopicTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicTableViewController.swift; sourceTree = "<group>"; };
 		4B29786729F98B88004A0B16 /* SwiftQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B29786A29F98B88004A0B16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -76,9 +73,8 @@
 				4B29787F29F98FAD004A0B16 /* Models */,
 				4B29786A29F98B88004A0B16 /* AppDelegate.swift */,
 				4B29786C29F98B88004A0B16 /* SceneDelegate.swift */,
-				4B29786E29F98B88004A0B16 /* ViewController.swift */,
-				480F033E29FAB3AC008BFD2B /* TabBarController.swift */,
-				480F034229FABE25008BFD2B /* MainViewController.swift */,
+				4B29786E29F98B88004A0B16 /* QuizViewController.swift */,
+				48C4821B29FD0753004C917B /* MainTabBarController.swift */,
 				480F034029FABDBB008BFD2B /* TeamViewController.swift */,
 				4B1B051429FAEB9800240C78 /* TopicTableViewController.swift */,
 				6896AB6C29FAD6E6004CA495 /* QuestionsViewController.swift */,
@@ -179,16 +175,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B29786F29F98B88004A0B16 /* ViewController.swift in Sources */,
+				4B29786F29F98B88004A0B16 /* QuizViewController.swift in Sources */,
 				4B1B051529FAEB9800240C78 /* TopicTableViewController.swift in Sources */,
+				48C4821C29FD0753004C917B /* MainTabBarController.swift in Sources */,
 				4B29788329F991BB004A0B16 /* Question.swift in Sources */,
-				480F033F29FAB3AC008BFD2B /* TabBarController.swift in Sources */,
 				6896AB6D29FAD6E6004CA495 /* QuestionsViewController.swift in Sources */,
 				4B29786B29F98B88004A0B16 /* AppDelegate.swift in Sources */,
 				4B29788529F99C78004A0B16 /* Team.swift in Sources */,
 				4B29786D29F98B88004A0B16 /* SceneDelegate.swift in Sources */,
 				480F034129FABDBB008BFD2B /* TeamViewController.swift in Sources */,
-				480F034329FABE25008BFD2B /* MainViewController.swift in Sources */,
 				79BEF45929FAF632008844E9 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
