@@ -7,9 +7,8 @@
 
 import UIKit
 
-class QuizViewController: UIViewController {
+final class QuizViewController: UIViewController {
 
-    var team: [Team]!
     var questions: [Question]!
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -19,7 +18,7 @@ class QuizViewController: UIViewController {
         guard let topicVC = navigationVC.topViewController as? TopicTableViewController else {
             return
         }
-        topicVC.questions = questions
+        //topicVC.questions = questions
     }
 }
 

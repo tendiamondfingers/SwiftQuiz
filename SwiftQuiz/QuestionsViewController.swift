@@ -17,6 +17,7 @@ final class QuestionsViewController: UIViewController {
     @IBOutlet var questionLabel: UILabel!
     @IBOutlet var answerButtons: [UIButton]!
     
+    @IBOutlet weak var progressView: UIProgressView!
     private var totalScore = 0
     private var currentIndex = 0
     
