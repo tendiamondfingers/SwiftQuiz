@@ -15,11 +15,12 @@ final class ResultViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        userScoreLabel.text = "Твой результат \(result)"
+        userScoreLabel.text = "Результат\(result) из 5"
     }
     
-    @IBAction func doneButtonPressed(_ sender: UIBarButtonItem) {
-        navigationController?.popToRootViewController(animated: true)
-        }
-    
+    @IBAction func doneButtonPressed() {
+        let topicVC = TopicTableViewController()
+        present(topicVC, animated: true)
+        dismiss(animated: false)
+    }
 }
