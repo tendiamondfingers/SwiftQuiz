@@ -14,6 +14,7 @@ final class TeamViewController: UIViewController {
     @IBOutlet weak var teamLabel: UILabel!
     
     var team: [Team]!
+    var questions: [Question]!
 
     private var currentIndex = 0
     let images =  ["Sergei", "DmitryF", "Stanislav", "Vitaly", "DmitryK"]

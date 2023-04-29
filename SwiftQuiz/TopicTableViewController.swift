@@ -12,6 +12,8 @@ import UIKit
 
 final class TopicTableViewController: UITableViewController {
     
+    var questions: [Question]!
+    
     private var topics: [Topic] = [
         .basics,
         .mvc,
