@@ -9,14 +9,16 @@ import UIKit
 
 final class QuizViewController: UIViewController {
 
+    @IBOutlet var playButton: UIButton!
+    
     var questions: [Question]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //playButton.layer.cornerRadius = 15
+        playButton.layer.cornerRadius = 15
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+  /*  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let navigationVC = segue.destination as? UINavigationController else {
             return
         }
@@ -24,6 +26,6 @@ final class QuizViewController: UIViewController {
             return
         }
         //topicVC.questions = questions
-//    }
+    } */
 }
 

@@ -22,7 +22,8 @@ final class TopicTableViewController: UITableViewController {
         .classes,
         .lifeCircle,
         .structs,
-        .uiKit
+        .uiKit,
+        .functions
     ]
     
 

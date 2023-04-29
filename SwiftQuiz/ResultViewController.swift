@@ -17,7 +17,7 @@ final class ResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         doneButton.layer.cornerRadius = 15
-        userScoreLabel.text = "Результат\(result) из 5"
+        userScoreLabel.text = "Правильно \(result) из 5"
     }
     
     @IBAction func doneButtonPressed() {
