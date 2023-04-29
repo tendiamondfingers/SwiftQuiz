@@ -7,24 +7,23 @@
 
 import UIKit
 
-final class TeamViewController: UIViewController, UIScrollViewDelegate  {
+final class TeamViewController: UIViewController {
     
-    @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var pageControl: UIPageControl!
+    @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var teamLabel: UILabel!
     
-    var team = Team.getTeam()
-    
+    var team: [Team]!
+
+    private var currentIndex = 0
     let images =  ["Sergei", "DmitryF", "Stanislav", "Vitaly", "DmitryK"]
-    let names = ["Cергей Захаров", "Дмитрий Федоров", "Станислав", "Виталий Сабин", "Дмитрий Келлер"]
-    var currentIndex = 0
-    
-    var frame = CGRect(x: 0, y: 0, width: 338, height: 338)
-    
+    let names = ["Cергей Захаров", "Дмитрий Федоров", "Станислав Сазонов", "Виталий Сабин", "Дмитрий Келлер"]
+  
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        photoImageView.layer.cornerRadius = 10
+        nameLabel.text = names[currentIndex]
         teamLabel.text = """
  Тимлид - Cергей Захаров
  Команда:
@@ -33,40 +32,34 @@ final class TeamViewController: UIViewController, UIScrollViewDelegate  {
  Станислав Сазонов,
  Дмитрий Келлер
 """
-        scrollView.showsHorizontalScrollIndicator = false
-        scrollView.isPagingEnabled = true
-        
-        for index in 0..<images.count {
-            frame.origin.x = scrollView.frame.size.width * CGFloat(index)
-            frame.size = scrollView.frame.size
-            
-            let imageView = UIImageView(frame: CGRect(x: scrollView.frame.size.width * CGFloat(index), y: 0, width: scrollView.frame.size.width, height: scrollView.frame.size.height))
-            imageView.contentMode = .scaleAspectFit
-            imageView.image = UIImage(named: images[index])
-            self.scrollView.addSubview(imageView)
-            
+        print(team)
+    }
+
+
+    
+    @IBAction func nextButtonTab(_ sender: UIButton) {
+        currentIndex += 1
+        if currentIndex == names.count {
+            currentIndex = 0
+            photoImageView.image = UIImage(named: images[currentIndex])
+            nameLabel.text = names[currentIndex]
+        }  else {
+            photoImageView.image = UIImage(named: images[currentIndex])
+            nameLabel.text = names[currentIndex]
         }
         
-        scrollView.contentSize = CGSize(width: scrollView.frame.size.width * CGFloat(images.count), height: scrollView.frame.size.height)
-        scrollView.delegate = self
+    }
+
+    @IBAction func backButtonTab(_ sender: UIButton) {
+        currentIndex -= 1
+        if currentIndex < 0 {
+            currentIndex = names.count - 1
+            photoImageView.image = UIImage(named: images[currentIndex])
+            nameLabel.text = names[currentIndex]
+        }  else {
+            photoImageView.image = UIImage(named: images[currentIndex])
+            nameLabel.text = names[currentIndex]
+        }
         
-        nameLabel.text = names[currentIndex]
-        
     }
-    
-    @IBAction func pageControlAction(_ sender: UIPageControl) {
-        let currentPage = sender.currentPage
-        currentIndex = currentPage
-        let x = CGFloat(currentPage) * scrollView.frame.size.width
-        scrollView.setContentOffset(CGPoint(x: x, y: 0), animated: true)
-        nameLabel.text = names[currentIndex]
-    }
-    
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        let page = Int(scrollView.contentOffset.x / scrollView.frame.size.width)
-        pageControl.currentPage = page
-        currentIndex = page
-        nameLabel.text = names[currentIndex]
-    }
-    
 }
