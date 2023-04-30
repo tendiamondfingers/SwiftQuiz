@@ -11,7 +11,7 @@ final class TopicTableViewController: UITableViewController {
     
     var questions: [Topic: [Question]]!
     
-    private var topics: [Topic] = [
+    private let topics: [Topic] = [
         .basics,
         .mvc,
         .collections,
