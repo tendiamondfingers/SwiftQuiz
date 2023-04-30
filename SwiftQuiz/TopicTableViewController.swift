@@ -71,6 +71,9 @@ final class TopicTableViewController: UITableViewController {
         }
     }
     
+    @IBAction func unwind(for segue: UIStoryboardSegue) {
+        guard segue.identifier == "showTopicVC" else { return }
+    }
 }
 
 

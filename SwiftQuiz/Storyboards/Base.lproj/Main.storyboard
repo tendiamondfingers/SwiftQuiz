@@ -23,7 +23,7 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="BxB-mL-w8w">
-                                <rect key="frame" x="26" y="449" width="268" height="99"/>
+                                <rect key="frame" x="26" y="454" width="268" height="94"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cT-mr-F6s">
                                         <rect key="frame" x="0.0" y="0.0" width="268" height="50"/>
@@ -48,34 +48,11 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCy-gm-LHp">
-                                        <rect key="frame" x="0.0" y="66" width="268" height="33"/>
+                                        <rect key="frame" x="0.0" y="66" width="268" height="28"/>
                                         <color key="tintColor" red="0.94117647410000005" green="0.50588238240000005" blue="0.3686274886" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="&gt; ">
-                                                    <attributes>
-                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                        <font key="NSFont" size="12" name="Helvetica"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment content="команда разработчиков">
-                                                    <attributes>
-                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                        <font key="NSFont" size="16" name="Menlo-Regular"/>
-                                                        <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment content=" &lt;">
-                                                    <attributes>
-                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                        <font key="NSFont" size="12" name="Helvetica"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
+                                        <buttonConfiguration key="configuration" style="plain" title="Команда разработчиков ">
+                                            <fontDescription key="titleFontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <segue destination="QOB-E7-rtV" kind="presentation" modalPresentationStyle="automatic" id="adw-uj-FJP"/>
@@ -204,18 +181,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Buc-Wb-kmQ">
-                                <rect key="frame" x="91" y="504" width="138.5" height="28"/>
+                                <rect key="frame" x="90" y="430" width="140" height="98"/>
                                 <color key="tintColor" red="0.94117647410000005" green="0.50588238240000005" blue="0.3686274886" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="`&lt; на главный экран">
-                                            <attributes>
-                                                <font key="NSFont" size="12" name="Helvetica"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                <buttonConfiguration key="configuration" style="plain" title="На главный экран">
+                                    <fontDescription key="titleFontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="backToQuiz" destination="QOB-E7-rtV" eventType="touchUpInside" id="vKE-dx-xOj"/>
@@ -225,13 +195,14 @@
                         <viewLayoutGuide key="safeArea" id="h6b-QH-ddl"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="h6b-QH-ddl" firstAttribute="bottom" secondItem="Buc-Wb-kmQ" secondAttribute="bottom" constant="16" id="AII-wf-BaB"/>
+                            <constraint firstItem="h6b-QH-ddl" firstAttribute="bottom" secondItem="Buc-Wb-kmQ" secondAttribute="bottom" constant="20" id="AII-wf-BaB"/>
                             <constraint firstItem="Cx1-W9-GUG" firstAttribute="top" secondItem="iHw-EK-Ys5" secondAttribute="bottom" constant="8" id="C2B-pV-045"/>
                             <constraint firstItem="h6b-QH-ddl" firstAttribute="trailing" secondItem="iHw-EK-Ys5" secondAttribute="trailing" constant="16" id="Guy-88-YLg"/>
                             <constraint firstItem="diH-QD-6GZ" firstAttribute="leading" secondItem="h6b-QH-ddl" secondAttribute="leading" constant="16" id="J9F-M2-Xzn"/>
                             <constraint firstItem="Buc-Wb-kmQ" firstAttribute="centerX" secondItem="tdy-U1-HRe" secondAttribute="centerX" id="L9M-6h-HWF"/>
                             <constraint firstItem="iHw-EK-Ys5" firstAttribute="leading" secondItem="h6b-QH-ddl" secondAttribute="leading" constant="16" id="Yot-rE-1H2"/>
                             <constraint firstItem="iHw-EK-Ys5" firstAttribute="top" secondItem="h6b-QH-ddl" secondAttribute="top" constant="20" id="ang-gM-QPV"/>
+                            <constraint firstItem="Buc-Wb-kmQ" firstAttribute="top" secondItem="diH-QD-6GZ" secondAttribute="bottom" constant="8" id="cp3-70-ehy"/>
                             <constraint firstItem="h6b-QH-ddl" firstAttribute="trailing" secondItem="diH-QD-6GZ" secondAttribute="trailing" constant="16" id="djk-Sf-wk1"/>
                             <constraint firstItem="vGu-jD-wcO" firstAttribute="top" secondItem="Cx1-W9-GUG" secondAttribute="bottom" constant="8" id="f3u-50-arI"/>
                             <constraint firstItem="diH-QD-6GZ" firstAttribute="top" secondItem="vGu-jD-wcO" secondAttribute="bottom" constant="8" id="naU-Ve-4pN"/>
@@ -400,39 +371,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="p7J-Es-pZE">
-                                <rect key="frame" x="89" y="170" width="142" height="228"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="p7J-Es-pZE">
+                                <rect key="frame" x="69.5" y="165" width="181" height="238"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Результат:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PvZ-bl-n44">
-                                        <rect key="frame" x="0.0" y="0.0" width="142" height="36"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="181" height="60"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="30"/>
                                         <color key="textColor" red="0.92549026010000002" green="0.38823530080000002" blue="0.21568629149999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 из 5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PiH-zb-gx9">
-                                        <rect key="frame" x="0.0" y="65" width="142" height="36"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <rect key="frame" x="0.0" y="89" width="181" height="60"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="30"/>
                                         <color key="textColor" red="0.92549026010000002" green="0.38823530080000002" blue="0.21568629149999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CVk-Rk-fcu">
-                                        <rect key="frame" x="0.0" y="130" width="142" height="34.5"/>
-                                        <color key="backgroundColor" red="0.92549026010000002" green="0.38823530080000002" blue="0.21568629149999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Играть ещё"/>
-                                        <connections>
-                                            <action selector="doneButtonPressed" destination="uHh-ie-Y3k" eventType="touchUpInside" id="JV4-1r-VN0"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sya-1x-Tyq">
-                                        <rect key="frame" x="0.0" y="193.5" width="142" height="34.5"/>
+                                        <rect key="frame" x="0.0" y="178" width="181" height="60"/>
                                         <color key="backgroundColor" red="0.92549026010000002" green="0.38823530080000002" blue="0.21568629149999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Q61-7w-gNR"/>
+                                        </constraints>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Выйти"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Играть ещё">
+                                            <fontDescription key="titleFontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
+                                        </buttonConfiguration>
                                         <connections>
-                                            <action selector="exitButtonPressed" destination="uHh-ie-Y3k" eventType="touchUpInside" id="1OI-oy-4oD"/>
+                                            <action selector="exitButtonPressed" destination="uHh-ie-Y3k" eventType="touchUpInside" id="OB2-lk-Rag"/>
+                                            <segue destination="UOl-jN-M4j" kind="unwind" identifier="showTopicVC" unwindAction="unwindFor:" id="Ebc-mF-xck"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -447,12 +414,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="ZFA-rv-JMk"/>
                     <connections>
+                        <outlet property="doneButton" destination="sya-1x-Tyq" id="B0H-Kf-xoO"/>
                         <outlet property="userScoreLabel" destination="PiH-zb-gx9" id="MRN-cF-wTJ"/>
-                        <outletCollection property="doneButtons" destination="CVk-Rk-fcu" collectionClass="NSMutableArray" id="YN3-7W-uPB"/>
-                        <outletCollection property="doneButtons" destination="sya-1x-Tyq" collectionClass="NSMutableArray" id="TBt-QR-wSR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sB2-CH-LtE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="UOl-jN-M4j" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="8820" y="-15"/>
         </scene>
@@ -463,7 +430,7 @@
                     <tabBarItem key="tabBarItem" title="Игра" image="gamecontroller" catalog="system" id="ycu-3T-ryV"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="c99-Ik-iqF">
-                        <rect key="frame" x="0.0" y="20" width="320" height="92.5"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="98.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.92549026010000002" green="0.38823530080000002" blue="0.21568629149999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <textAttributes key="titleTextAttributes">
