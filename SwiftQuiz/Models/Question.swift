@@ -10,8 +10,8 @@ struct Question {
     let title: String
     let answers: [Answer]
     
-    static func getQuestions() -> [Question] {
-        [
+    static func getQuestions() -> [Topic: [Question]] {
+        let questions = [
             Question(
                 topic: .basics,
                 title: "Какое ключевое слово используется для объявления переменной в Swift?",
@@ -303,7 +303,7 @@ struct Question {
                 ]
             ),
             Question(
-                topic: .dataTransfer,
+                topic: .screenTransition,
                 title: "Можно ли передавать данные через protocol?",
                 answers: [
                     Answer(text: "да", score: 1),
@@ -312,7 +312,7 @@ struct Question {
                     Answer(text: "можно, но это плохая практика", score: 0)
                 ]
             ),
-            // келлер
+            
             Question(
                 topic: .classes,
                 title: "Что из перечисленного является ссылочным типом?",
@@ -514,6 +514,22 @@ struct Question {
                 ]
             )
         ]
+        
+        var questionsByTopic: [Topic: [Question]] = [:]
+        
+        for question in questions {
+            if questionsByTopic[question.topic] == nil {
+                questionsByTopic[question.topic] = [question]
+            } else {
+                questionsByTopic[question.topic]?.append(question)
+            }
+        }
+        
+        for topic in questionsByTopic.keys {
+            questionsByTopic[topic]?.shuffle()
+        }
+        
+        return questionsByTopic
     }
 }
 
@@ -536,7 +552,7 @@ enum Topic {
 }
 
 
-            
-            
+
+
 
 

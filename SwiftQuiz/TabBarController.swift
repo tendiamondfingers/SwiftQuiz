@@ -2,32 +2,31 @@
 //  MainTabBarController.swift
 //  SwiftQuiz
 //
-//  Created by Дмитрий Федоров on 27.04.2023.
+//  Created by Дмитрий Федоров on 29.04.2023.
 //
 
 import UIKit
 
-final class TabBarController: UITabBarController {
-    
-    private let team = Team.getTeam()
 
+
+final class TabBarController: UITabBarController {
+  
+    let team = Team.getTeam()
+    let question = Question.getQuestions()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let appearance = UITabBarAppearance()
-        tabBar.standardAppearance = appearance
-        tabBar.scrollEdgeAppearance = appearance
         
-        transferData()
-    }
-    
-    private func transferData() {
-        guard let viewControllers else { return }
+        guard let viewControllers = viewControllers else {
+            return
+        }
         
-        viewControllers.forEach {
-            if let teamVC = $0 as? TeamViewController {
+        for viewController in viewControllers {
+            //if let quizVC = viewController as? QuizViewController {
+                // quizVC.questions = question
+            } else if let teamVC = viewController as? TeamViewController {
                 teamVC.team = team
             }
         }
     }
-    
 }

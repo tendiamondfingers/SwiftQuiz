@@ -5,42 +5,18 @@
 //  Created by Сергей Захаров on 26.04.2023.
 //
 
+
 struct Team {
-    let name: String
-    let surname: String
-    let image: String
-
-    var fullName: String {
-        "\(name) \(surname)"
-    }
-
+    let fullName: String
+    let avatar: String
+    
     static func getTeam() -> [Team] {
         [
-            Team(
-                name: "Сергей",
-                surname: "Захаров",
-                image: "Sergei"
-            ),
-            Team(
-                name: "Дмитрий",
-                surname: "Келлер",
-                image: "DmitryK"
-            ),
-            Team(
-                name: "Виталий",
-                surname: "Сабин",
-                image: "Vitaly"
-            ),
-            Team(
-                name: "Святослав",
-                surname: "Святослав",
-                image: "Svyatoslav"
-            ),
-            Team(
-                name: "Дмитрий",
-                surname: "Федоров",
-                image: "DmitryF"
-            )
+            Team(fullName: "Сергей Захаров", avatar: "Sergei"),
+            Team(fullName: "Дмитрий Федоров", avatar: "DmitryF"),
+            Team(fullName: "Виталий Сабин", avatar: "Vitaly"),
+            Team(fullName: "Станислав Сазонов", avatar: "Stanislav"),
+            Team(fullName: "Дмитрий Келлер", avatar: "DmitryK")
         ]
     }
 }
