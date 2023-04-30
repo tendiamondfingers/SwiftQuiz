@@ -5,8 +5,6 @@
 //  Created by Сергей Захаров on 27.04.2023.
 //
 
-
-
 import UIKit
 
 final class TopicTableViewController: UITableViewController {
@@ -26,15 +24,12 @@ final class TopicTableViewController: UITableViewController {
         .functions
     ]
     
-
-    
     // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return topics.count
     }
-    
-    
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TopicCell", for: indexPath)
         let topic = topics[indexPath.row]

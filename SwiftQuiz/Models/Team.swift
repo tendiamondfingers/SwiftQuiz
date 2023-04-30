@@ -18,6 +18,5 @@ struct Team {
             Team(fullName: "Станислав Сазонов", avatar: "Stanislav"),
             Team(fullName: "Дмитрий Келлер", avatar: "DmitryK")
         ]
-        
     }
 }

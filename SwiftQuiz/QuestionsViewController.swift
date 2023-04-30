@@ -14,16 +14,23 @@ final class QuestionsViewController: UIViewController {
     @IBOutlet var questionLabel: UILabel!
     @IBOutlet var answerButtons: [UIButton]!
     
-    @IBOutlet weak var progressView: UIProgressView!
+    @IBOutlet weak var progressBar: UIProgressView!
+    
+    var questions: [Question]!
+    
     private var totalScore = 0
     private var currentIndex = 0
     
-    var questions: [Question]!
+    
+    private var totalTime = 5 // тестовый режим!!!
+    private var secondsPassed = 0
+    private var timer = Timer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
         roundCorners()
+        startTimer()
         updateUI(for: currentIndex)
     }
     
@@ -47,7 +54,7 @@ final class QuestionsViewController: UIViewController {
         for (button, answer) in zip(answerButtons, answers) {
             button.setTitle(answer.text, for: .normal)
         }
-        numberLabel.text = "Вопрос \(currentIndex + 1) из \(questions.count)"
+        numberLabel.text = "Вопрос: \(currentIndex + 1) из \(questions.count)"
     }
     
     private func nextQuestion() {
@@ -62,8 +69,41 @@ final class QuestionsViewController: UIViewController {
     
     private func roundCorners() {
         for button in answerButtons {
-            button.layer.cornerRadius = 15
+            button.layer.cornerRadius = 10
         }
     }
+    
+    private func startTimer () {
+         timer.invalidate()
+         progressBar.progress = 0
+         secondsPassed = 0
+         timer = Timer.scheduledTimer(
+             timeInterval: 1.0,
+             target: self,
+             selector: #selector(updateTimer),
+             userInfo: nil,
+             repeats: true
+         )
+     }
 
+    @objc func updateTimer() {
+        if secondsPassed < totalTime {
+            secondsPassed += 1
+            let percentageProgress = Float(secondsPassed) / Float(totalTime)
+            progressBar.progress = percentageProgress
+            
+        } else {
+            timer.invalidate()
+            showTimeIsUpAlert()
+        }
+    }
+    
+    private func showTimeIsUpAlert() {
+        let alert = UIAlertController(title: "Увы, время вышло", message: "Гуглить можно и быстрее, время на прохождение теста закончилось", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default) { _ in
+            self.performSegue(withIdentifier: "showResult", sender: nil)
+        }
+        alert.addAction(okAction)
+        present(alert, animated: true, completion: nil)
+    }
 }

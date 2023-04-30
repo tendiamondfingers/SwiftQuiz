@@ -15,7 +15,7 @@ final class QuizViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        playButton.layer.cornerRadius = 15
+        playButton.layer.cornerRadius = 10
     }
     
   /*  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

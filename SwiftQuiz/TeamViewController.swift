@@ -13,7 +13,7 @@ final class TeamViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var teamLabel: UILabel!
     
-    let team = Team.getTeam()
+    var team: [Team]!
 
     private var currentIndex = 0
 

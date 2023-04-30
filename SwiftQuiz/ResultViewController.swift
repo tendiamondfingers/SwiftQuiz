@@ -10,14 +10,21 @@ import UIKit
 
 final class ResultViewController: UIViewController {
     @IBOutlet var userScoreLabel: UILabel!
-    @IBOutlet var doneButton: UIButton!
+    
+    @IBOutlet var doneButtons: [UIButton]!
     
     var result = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        doneButton.layer.cornerRadius = 15
+        roundCorners()
         userScoreLabel.text = "Правильно \(result) из 5"
+    }
+    
+    private func roundCorners() {
+        for button in doneButtons {
+            button.layer.cornerRadius = 10
+        }
     }
     
     @IBAction func doneButtonPressed() {
@@ -25,5 +32,10 @@ final class ResultViewController: UIViewController {
          let topicVC = storyboard.instantiateViewController(identifier: "TopicTableViewController") as! TopicTableViewController
         topicVC.modalPresentationStyle = .fullScreen
          present(topicVC, animated: true)
+    }
+    
+    @IBAction func exitButtonPressed() {
+        performSegue(withIdentifier: "mySegueIdentifier", sender: self)
+
     }
 }

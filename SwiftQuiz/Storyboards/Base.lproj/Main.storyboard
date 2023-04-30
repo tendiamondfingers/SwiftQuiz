@@ -146,7 +146,7 @@
                             <constraint firstItem="Cx1-W9-GUG" firstAttribute="top" secondItem="iHw-EK-Ys5" secondAttribute="bottom" constant="8" symbolic="YES" id="xAz-da-s7q"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Разработчики" image="square.and.arrow.up.fill" catalog="system" id="auw-a3-2Em"/>
+                    <tabBarItem key="tabBarItem" title="Разработчики" image="person.3" catalog="system" id="auw-a3-2Em"/>
                     <connections>
                         <outlet property="nameLabel" destination="Cx1-W9-GUG" id="1Tm-hh-ccB"/>
                         <outlet property="photoImageView" destination="iHw-EK-Ys5" id="bKy-Lh-Hny"/>
@@ -183,7 +183,11 @@
                             <outlet property="delegate" destination="L3a-WA-y9F" id="pIM-o0-RCH"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Темы" id="Mw2-hA-2ZK"/>
+                    <navigationItem key="navigationItem" title="Темы" id="Mw2-hA-2ZK">
+                        <barButtonItem key="leftBarButtonItem" title="&lt; назад" id="4Yt-re-KYd">
+                            <color key="tintColor" red="0.92549026010000002" green="0.38823530080000002" blue="0.21568629149999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xPI-Sc-icz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -194,7 +198,7 @@
             <objects>
                 <navigationController id="Y8L-8U-27k" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="EX2-Ga-jvS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -334,7 +338,7 @@
                     <navigationItem key="navigationItem" id="TPm-dx-dm8"/>
                     <connections>
                         <outlet property="numberLabel" destination="52l-0q-8t1" id="eRZ-dA-qQg"/>
-                        <outlet property="progressView" destination="VVx-wp-ViB" id="g0u-uX-D85"/>
+                        <outlet property="progressBar" destination="VVx-wp-ViB" id="g0u-uX-D85"/>
                         <outlet property="questionLabel" destination="De3-Qq-NAf" id="Vm0-pF-sMF"/>
                         <outletCollection property="answerButtons" destination="Y5z-Th-37v" collectionClass="NSMutableArray" id="7uj-h4-Ld4"/>
                         <outletCollection property="answerButtons" destination="DN4-vJ-xob" collectionClass="NSMutableArray" id="xdR-JY-i1k"/>
@@ -355,35 +359,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="p7J-Es-pZE">
-                                <rect key="frame" x="89" y="201" width="142" height="166"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="p7J-Es-pZE">
+                                <rect key="frame" x="89" y="170" width="142" height="228"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Результат:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PvZ-bl-n44">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Результат:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PvZ-bl-n44">
                                         <rect key="frame" x="0.0" y="0.0" width="142" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <color key="textColor" red="0.92549026010000002" green="0.38823530080000002" blue="0.21568629149999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 из 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PiH-zb-gx9">
-                                        <rect key="frame" x="31" y="65" width="80.5" height="36"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 из 5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PiH-zb-gx9">
+                                        <rect key="frame" x="0.0" y="65" width="142" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <color key="textColor" red="0.92549026010000002" green="0.38823530080000002" blue="0.21568629149999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CVk-Rk-fcu">
-                                        <rect key="frame" x="33.5" y="130" width="75" height="36"/>
+                                        <rect key="frame" x="0.0" y="130" width="142" height="34.5"/>
                                         <color key="backgroundColor" red="0.92549026010000002" green="0.38823530080000002" blue="0.21568629149999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Done"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Играть ещё"/>
                                         <connections>
-                                            <action selector="doneButtonPressed" destination="uHh-ie-Y3k" eventType="touchUpInside" id="GMg-75-MEt"/>
+                                            <action selector="doneButtonPressed" destination="uHh-ie-Y3k" eventType="touchUpInside" id="JV4-1r-VN0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sya-1x-Tyq">
+                                        <rect key="frame" x="0.0" y="193.5" width="142" height="34.5"/>
+                                        <color key="backgroundColor" red="0.92549026010000002" green="0.38823530080000002" blue="0.21568629149999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Выйти"/>
+                                        <connections>
+                                            <action selector="exitButtonPressed" destination="uHh-ie-Y3k" eventType="touchUpInside" id="1OI-oy-4oD"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="CVk-Rk-fcu" firstAttribute="width" secondItem="PvZ-bl-n44" secondAttribute="width" multiplier="0.528169" id="cKz-yq-XKv"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gkr-iT-7dK"/>
@@ -395,8 +406,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="ZFA-rv-JMk"/>
                     <connections>
-                        <outlet property="doneButton" destination="CVk-Rk-fcu" id="LX7-Nc-gHw"/>
                         <outlet property="userScoreLabel" destination="PiH-zb-gx9" id="MRN-cF-wTJ"/>
+                        <outletCollection property="doneButtons" destination="CVk-Rk-fcu" collectionClass="NSMutableArray" id="YN3-7W-uPB"/>
+                        <outletCollection property="doneButtons" destination="sya-1x-Tyq" collectionClass="NSMutableArray" id="TBt-QR-wSR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sB2-CH-LtE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -430,7 +442,7 @@
         <image name="Sergei" width="640" height="640"/>
         <image name="gamecontroller" catalog="system" width="128" height="79"/>
         <image name="logo 1" width="256" height="256"/>
-        <image name="square.and.arrow.up.fill" catalog="system" width="115" height="128"/>
+        <image name="person.3" catalog="system" width="128" height="62"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
