@@ -21,7 +21,7 @@ final class QuestionsViewController: UIViewController {
     private var totalScore = 0
     private var currentIndex = 0
     
-    private var totalTime = 5 // тестовый режим!!!
+    private var totalTime = 50
     private var secondsPassed = 0
     private var timer = Timer()
     
