@@ -22,9 +22,8 @@ final class ResultViewController: UIViewController {
     
     @IBAction func doneButtonPressed() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let topicVC = storyboard.instantiateViewController(identifier: "TopicTableViewController") as! TopicTableViewController
-        let navigationController = UINavigationController(rootViewController: topicVC)
-        navigationController.modalPresentationStyle = .fullScreen
-        present(navigationController, animated: true)
+         let topicVC = storyboard.instantiateViewController(identifier: "TopicTableViewController") as! TopicTableViewController
+        topicVC.modalPresentationStyle = .fullScreen
+         present(topicVC, animated: true)
     }
 }
