@@ -8,25 +8,24 @@
 import UIKit
 
 final class QuizViewController: UIViewController {
-
+    
     @IBOutlet var playButton: UIButton!
     
-    var questions: [Question]!
+    let team = Team.getTeam()
+    let question = Question.getQuestions()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         playButton.layer.cornerRadius = 10
     }
     
-  /*  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let navigationVC = segue.destination as? UINavigationController else {
-            return
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let teamVC = segue.destination as? TeamViewController {
+            teamVC.team = team
+        } else if let questionVC = segue.destination as? TopicTableViewController{
+            questionVC.questions = question
         }
-        //guard let topicVC = navigationVC.topViewController as? TopicTableViewController else {
-            return
-        }
-        //topicVC.questions = questions
-    } */
+    }
     
 }
 

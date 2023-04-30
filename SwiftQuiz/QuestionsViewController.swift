@@ -21,7 +21,6 @@ final class QuestionsViewController: UIViewController {
     private var totalScore = 0
     private var currentIndex = 0
     
-    
     private var totalTime = 5 // тестовый режим!!!
     private var secondsPassed = 0
     private var timer = Timer()
@@ -63,7 +62,6 @@ final class QuestionsViewController: UIViewController {
             updateUI(for: currentIndex)
             return
         }
-        
         performSegue(withIdentifier: "showResult", sender: nil)
     }
     

@@ -9,7 +9,7 @@ import UIKit
 
 final class TopicTableViewController: UITableViewController {
     
-    var questions = Question.getQuestions()
+    var questions: [Topic: [Question]]!
     
     private var topics: [Topic] = [
         .basics,
@@ -70,6 +70,7 @@ final class TopicTableViewController: UITableViewController {
             destinationVC.questions = selectedQuestions
         }
     }
+    
 }
 
 
