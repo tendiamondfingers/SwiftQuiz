@@ -36,6 +36,6 @@ final class ResultViewController: UIViewController {
     }
     
     @IBAction func exitButtonPressed() {
-
+        navigationController?.popViewController(animated: true)
     }
 }

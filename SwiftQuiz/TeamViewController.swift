@@ -19,9 +19,6 @@ final class TeamViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        for member in team {
-            print("\(member.fullName) (\(member.avatar))")
-        }
         
         photoImageView.layer.cornerRadius = 10
         nameLabel?.text = team[currentIndex].fullName
@@ -29,6 +26,7 @@ final class TeamViewController: UIViewController {
         teamLabel.text = """
         Тимлид:
         \(team[0].fullName)
+        
         Команда:
         \(team[1].fullName)
         \(team[2].fullName)
@@ -59,6 +57,9 @@ final class TeamViewController: UIViewController {
             photoImageView.image = UIImage(named: team[currentIndex].avatar)
             nameLabel.text = team[currentIndex].fullName
         }
-        
+    }
+    
+    @IBAction func backToQuiz() {
+        dismiss(animated: true)
     }
 }
