@@ -21,8 +21,9 @@ final class ResultViewController: UIViewController {
     }
     
     @IBAction func doneButtonPressed() {
-        let topicVC = TopicTableViewController()
-        present(topicVC, animated: true)
-        dismiss(animated: false)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+         let vc = storyboard.instantiateViewController(identifier: "TopicTableViewController") as! TopicTableViewController
+         present(vc, animated: true)
+        
     }
 }

@@ -160,7 +160,7 @@
         <!--Темы-->
         <scene sceneID="172-Ku-Tgk">
             <objects>
-                <tableViewController id="L3a-WA-y9F" customClass="TopicTableViewController" customModule="SwiftQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="TopicTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="L3a-WA-y9F" customClass="TopicTableViewController" customModule="SwiftQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="mAr-wi-7xJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -194,7 +194,7 @@
             <objects>
                 <navigationController id="Y8L-8U-27k" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="EX2-Ga-jvS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -377,7 +377,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Done"/>
                                         <connections>
-                                            <action selector="doneButtonPressed" destination="uHh-ie-Y3k" eventType="touchUpInside" id="Jrv-F2-5hf"/>
+                                            <action selector="doneButtonPressed" destination="uHh-ie-Y3k" eventType="touchUpInside" id="GMg-75-MEt"/>
                                         </connections>
                                     </button>
                                 </subviews>
