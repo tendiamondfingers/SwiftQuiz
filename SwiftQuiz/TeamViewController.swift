@@ -14,30 +14,29 @@ final class TeamViewController: UIViewController {
     @IBOutlet weak var teamLabel: UILabel!
     
     var team: [Team]!
-
+    
     private var currentIndex = 0
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-            for member in team {
-              print("\(member.fullName) (\(member.avatar))")
-            }
-            
+        for member in team {
+            print("\(member.fullName) (\(member.avatar))")
+        }
+        
         photoImageView.layer.cornerRadius = 10
         nameLabel?.text = team[currentIndex].fullName
         
         teamLabel.text = """
- Тимлид:
-\(team[0].fullName)
- Команда:
-\(team[1].fullName)
-\(team[2].fullName)
-\(team[3].fullName)
-\(team[4].fullName)
-"""
-
+        Тимлид:
+        \(team[0].fullName)
+        Команда:
+        \(team[1].fullName)
+        \(team[2].fullName)
+        \(team[3].fullName)
+        \(team[4].fullName)
+        """
     }
-
+    
     @IBAction func nextButtonTab(_ sender: UIButton) {
         currentIndex += 1
         if currentIndex == team.count {
@@ -48,9 +47,8 @@ final class TeamViewController: UIViewController {
             photoImageView.image = UIImage(named: team[currentIndex].avatar)
             nameLabel.text = team[currentIndex].fullName
         }
-        
     }
-
+    
     @IBAction func backButtonTab(_ sender: UIButton) {
         currentIndex -= 1
         if currentIndex < 0 {

@@ -72,7 +72,7 @@ final class QuestionsViewController: UIViewController {
             button.layer.cornerRadius = 10
         }
     }
-    
+    // MARK: - Metods for Timer
     private func startTimer () {
          timer.invalidate()
          progressBar.progress = 0

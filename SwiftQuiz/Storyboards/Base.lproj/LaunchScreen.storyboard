@@ -25,6 +25,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
+                        <color key="tintColor" red="0.92549026010000002" green="0.38823530080000002" blue="0.21568629149999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="LtP-kF-Okc" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" multiplier="4:3" id="PEP-L7-vyp"/>
                             <constraint firstItem="LtP-kF-Okc" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" multiplier="3:4" id="Yvt-ZV-Ypm"/>

@@ -9,6 +9,7 @@
 import UIKit
 
 final class ResultViewController: UIViewController {
+    
     @IBOutlet var userScoreLabel: UILabel!
     
     @IBOutlet var doneButtons: [UIButton]!
@@ -35,7 +36,6 @@ final class ResultViewController: UIViewController {
     }
     
     @IBAction func exitButtonPressed() {
-        performSegue(withIdentifier: "mySegueIdentifier", sender: self)
 
     }
 }
