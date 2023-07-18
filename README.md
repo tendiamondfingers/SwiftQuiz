@@ -1,10 +1,19 @@
 # SwiftQuiz
 Quiz on the theory of the programming language swift. 
 
+## Launch Screen
+![Launch Screen](https://github.com/SergeCreate/SwiftQuiz/assets/121385255/01af38b4-0592-490a-86d2-04628bd7c3ce) 
+## Starting Screen
+![Starting screen](https://github.com/SergeCreate/SwiftQuiz/assets/121385255/21c75af3-1360-40e4-93c7-3ca7c7472ab5)
+## Developers
+![Developers](https://github.com/SergeCreate/SwiftQuiz/assets/121385255/d557507f-39cd-4b2f-9ac9-6688d335f15c)
+## Choice of topics
+![Choice of topics](https://github.com/SergeCreate/SwiftQuiz/assets/121385255/6672230a-0a33-4df0-837d-716720441569)
+## Questions
+![Quiz](https://github.com/SergeCreate/SwiftQuiz/assets/121385255/e4ce5dba-c38b-400d-bbc0-d798202d8796)
 
-<img width="383" alt="Simulator Screenshot - iPhone 14 Pro - 2023-07-18 at 14.39.42.png" src="https://user-images.githubusercontent.com/117233833/235368610-60157b75-7f19-480f-861d-ef1388452a1e.png">
-<img width="383" alt="Снимок экрана 2023-04-30 в 20 45 06" src="https://user-images.githubusercontent.com/117233833/235368622-0f03e8c9-c257-4e87-86d3-8be8cdb254e3.png">
-<img width="383" alt="Снимок экрана 2023-04-30 в 20 45 13" src="https://user-images.githubusercontent.com/117233833/235368636-a25639e8-e733-4ac5-93ee-86f530a51d88.png">
-<img width="383" alt="Снимок экрана 2023-04-30 в 20 45 25" src="https://user-images.githubusercontent.com/117233833/235368655-a2fc8c23-bcf7-458b-8ad3-ca8800e915a2.png">
-<img width="383" alt="Снимок экрана 2023-04-30 в 20 46 16" src="https://user-images.githubusercontent.com/117233833/235368659-bd5b9927-41bf-4b73-b588-d21913b2d009.png">
-<img width="383" alt="Снимок экрана 2023-04-30 в 20 47 45" src="https://user-images.githubusercontent.com/117233833/235368664-09f48b85-de89-4a11-9182-b5bc40f3b6ee.png">
+## Result and the ability to return to the screen with themes
+![Quiz](https://github.com/SergeCreate/SwiftQuiz/assets/121385255/432934d4-d7ae-479b-acdf-d8e1dce0b21c)
+## Fail, because time is over :C
+![Fail, because time is over](https://github.com/SergeCreate/SwiftQuiz/assets/121385255/20abeb65-3916-4126-be27-a823d14afc20)
+
